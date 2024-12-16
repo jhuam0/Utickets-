@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTickets</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <h1>UTickets</h1>
+        </div>
+        <form className="relative hidden md:block">
+            <input
+              type="text"
+              placeholder="Buscar eventos, categorías..."
+              className="bg-gray-700 text-white px-4 py-2 rounded-full w-64 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            />
+            <button type="submit" className="absolute right-2 top-2 text-gray-300 hover:text-white">
+              <Search className="h-5 w-5" />
+            </button>
+          </form>
+        <nav>
+            <ul>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Ingresar</a></li>
+                <li><a href="#">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Young Talent Voice</h2>
+                <p><span>Música</span> - Personal</p>
+                <p>Young Moro - XOXO Tour <br> 02 de noviembre 2024</p>
+                <button onclick="redirectToEventDetail()">Ver Más</button>
+            </div>
+            <div class="hero-image">
+                <img src="young.png" alt="Young Talent">
+            </div>
+        </div>
+    </section>
+
+    <!-- Botones -->
+    <section class="buttons">
+        <button>Ingeniería de Sistemas</button>
+        <button>Ingeniería de Sistemas</button>
+        <button>Ingeniería de Sistemas</button>
+    </section>
+
+    <!-- Sección de eventos -->
+    <section class="eventos">
+        
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <img src="lanis-event.jpg" alt="Evento Lanis">
+                <p>Lanis Dance | 18/07/2024</p>
+                <button onclick="redirectToEventDetail()">Comprar Ticket</button>
+            </div>
+            <div class="tarjeta">
+                <img src="cachimbo-event.jpg" alt="Evento Cachimbo">
+                <p>Cachimbo Fest | 20/08/2024</p>
+                <button onclick="redirectToEventDetail()">Comprar Ticket</button>
+            </div>
+            <div class="tarjeta">
+                <img src="cachimbo-event.jpg" alt="Evento Cachimbo">
+                <p>Cachimbo Fest | 20/08/2024</p>
+                <button onclick="redirectToEventDetail()">Comprar Ticket</button>
+            </div>
+            <div class="tarjeta">
+                <img src="cachimbo-event.jpg" alt="Evento Cachimbo">
+                <p>Cachimbo Fest | 20/08/2024</p>
+                <button onclick="redirectToEventDetail()">Comprar Ticket</button>
+            </div>
+            <div class="tarjeta">
+                <img src="cachimbo-event.jpg" alt="Evento Cachimbo">
+                <p>Cachimbo Fest | 20/08/2024</p>
+                <button onclick="redirectToEventDetail()">Comprar Ticket</button>
+            </div>
+            <div class="tarjeta">
+                <img src="cachimbo-event.jpg" alt="Evento Cachimbo">
+                <p>Cachimbo Fest | 20/08/2024</p>
+                <button onclick="redirectToEventDetail()">Comprar Ticket</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3>UTickets</h3>
+            </div>
+            <div class="footer-section">
+                <h3>Conózcanos</h3>
+                <ul>
+                    <li><a href="#">Acerca de nosotros</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de cookies</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Revisa tu boleto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>¡Trabajemos Juntos!</h3>
+                <ul>
+                    <li><a href="#">¿Tienes un evento?</a></li>
+                    <li><a href="#">Venta boletos</a></li>
+                    <li><a href="#">Medios promocionales</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Conversemos</h3>
+                <ul>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3><a href="#">Libro de reclamaciones</a></h3>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript para manejo de clics -->
+    <script>
+        function redirectToEventDetail() {
+            window.location.href = "event-detail.html";
+        }
+    </script>
+</body>
+</html>
+
+
+    
+
+    
+    
+
+    
+
+    
