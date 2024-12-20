@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Devoluciones - UTickets</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d1117;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #161b22;
+            padding: 10px 20px;
+        }
+
+        header .logo h1 {
+            color: #ff69b4;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff69b4;
+        }
+
+        .categories {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .button-group {
+            margin-bottom: 20px;
+        }
+
+        .button-group button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .button-group button:hover {
+            background-color: #ff1493;
+        }
+
+        .factura {
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            padding: 20px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .factura h2 {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #ff69b4;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        table tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>UTickets</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="principal.html">Inicio</a></li>
+                <li><a href="categories.html">Categorías</a></li>
+                <li><a href="mis_facturas.html">Mis Facturas</a></li>
+                <li><a href="mis_devoluciones.html" class="active">Mis Devoluciones</a></li>
+                <li><a href="otros.html">Otros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="categories">
+        <div class="button-group">
+            <button onclick="location.href='my-events.html'">Mis eventos</button>
+            <button onclick="location.href='mis_facturas.html'">Mis facturas</button>
+            <button onclick="location.href='mis_devoluciones.html'" class="active">Mis devoluciones</button>
+            <button onclick="location.href='otros.html'">Otros</button>
+        </div>
+
+        <div class="devoluciones">
+            <h2>Devoluciones</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nº</th>
+                        <th>Descripción</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Dcto.</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>ALANIS MORISSETTE WORLD TOUR</td>
+                        <td>3</td>
+                        <td>120.20</td>
+                        <td>0.00%</td>
+                        <td>360.60</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>ALANIS MORISSETTE WORLD TOUR</td>
+                        <td>1</td>
+                        <td>220.20</td>
+                        <td>0.00%</td>
+                        <td>220.20</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>ALANIS MORISSETTE WORLD TOUR</td>
+                        <td>1</td>
+                        <td>300.20</td>
+                        <td>0.00%</td>
+                        <td>300.20</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>ALANIS MORISSETTE WORLD TOUR</td>
+                        <td>2</td>
+                        <td>200.00</td>
+                        <td>0.00%</td>
+                        <td>400.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

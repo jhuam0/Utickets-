@@ -317,6 +317,583 @@ footer a:hover {
     background-color: #e09d00;
 }
 
+/* Estilos para Categorías */
+.categories {
+    padding: 2rem;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.button-group button {
+    padding: 1rem 2rem;
+    background-color: #ffb100;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button-group button:hover {
+    background-color: #e09d00;
+}
+
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.event-item {
+    background-color: #1b1f35;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+}
+
+.event-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.event-info {
+    margin-top: 1rem;
+}
+
+.event-info h3 {
+    color: #ffb100;
+    font-size: 1.5rem;
+}
+
+.event-info p {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.event-info button {
+    padding: 0.5rem 1rem;
+    background-color: #ffb100;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.event-info button:hover {
+    background-color: #e09d00;
+}
+
+
+/* Estilos para Eventos */
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.event-item {
+    background-color: #1b1f35;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 22%;
+}
+
+.event-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.event-info {
+    margin-top: 1rem;
+}
+
+.event-info h3 {
+    color: #ffb100;
+    font-size: 1.5rem;
+}
+
+.event-info p {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.event-info button {
+    padding: 0.5rem 1rem;
+    background-color: #ffb100;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.event-info button:hover {
+    background-color: #e09d00;
+}
+
+/* Pie de página */
+footer {
+    background-color: #f7b463;
+    padding: 40px 20px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d0d27;
+    color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1a1a40;
+}
+.logo h1 {
+    color: #f05454;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+nav ul li a:hover {
+    background-color: #f05454;
+    border-radius: 5px;
+}
+.categories {
+    text-align: center;
+    margin: 20px auto;
+}
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.button-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.button-group button:nth-child(1) {
+    background-color: #f05454;
+}
+.button-group button:nth-child(2) {
+    background-color: #ffcc00;
+}
+.button-group button:nth-child(3) {
+    background-color: #800080;
+}
+.button-group button:nth-child(4) {
+    background-color: #008080;
+}
+.button-group button:hover {
+    transform: scale(1.1);
+}
+.event-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.event-item {
+    display: flex;
+    background-color: #1a1a40;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.event-item img {
+    width: 40%;
+    object-fit: cover;
+}
+.event-info {
+    padding: 10px;
+    flex: 1;
+}
+.event-info h3 {
+    margin: 0 0 10px;
+    color: #f05454;
+}
+.event-info button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.event-info button:hover {
+    background-color: #003d80;
+}
+
+.button-group button.active {
+    background-color: #ffa500;
+    color: #fff;
+}
+/* Estilos para la Página de Inicio de Sesión */
+.login {
+    background-color: #1b1f35;
+    color: #fff;
+    padding: 2rem;
+    margin: 2rem auto;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.login h2 {
+    color: #ffb100;
+    margin-bottom: 2rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+}
+
+.input-group input:focus {
+    outline: none;
+    border: 2px solid #ffb100;
+}
+
+.login-button, .register-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.login-button {
+    background-color: #ffb100;
+    color: #fff;
+}
+
+.login-button:hover {
+    background-color: #e09d00;
+}
+
+.register-button {
+    background-color: #333;
+    color: #fff;
+}
+
+.register-button:hover {
+    background-color: #555;
+}
+
+.forgot-password {
+    display: block;
+    color: #ffb100;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+/* Estilos para la Página de Registro */
+.register {
+    background-color: #1b1f35;
+    color: #fff;
+    padding: 2rem;
+    margin: 2rem auto;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.register h2 {
+    color: #ffb100;
+    margin-bottom: 2rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+}
+
+.input-group input:focus {
+    outline: none;
+    border: 2px solid #ffb100;
+}
+
+.register-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ffb100;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.register-button:hover {
+    background-color: #e09d00;
+}
+/* Estilos para la Página de Recuperación de Contraseña */
+.forgot-password {
+    background-color: #1b1f35;
+    color: #fff;
+    padding: 2rem;
+    margin: 2rem auto;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.forgot-password h2 {
+    color: #ffb100;
+    margin-bottom: 2rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+}
+
+.input-group input:focus {
+    outline: none;
+    border: 2px solid #ffb100;
+}
+
+.send-code-button, .recover-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.send-code-button {
+    background-color: #ffb100;
+    color: #fff;
+}
+
+.send-code-button:hover {
+    background-color: #e09d00;
+}
+
+.recover-button {
+    background-color: #ffb100;
+    color: #fff;
+}
+
+.recover-button:hover {
+    background-color: #e09d00;
+}
+/* Estilos para la Página de Cambio de Contraseña */
+.change-password {
+    background-color: #1b1f35;
+    color: #fff;
+    padding: 2rem;
+    margin: 2rem auto;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.change-password h2 {
+    color: #ffb100;
+    margin-bottom: 2rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+}
+
+.input-group input:focus {
+    outline: none;
+    border: 2px solid #ffb100;
+}
+
+.change-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ffb100;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.change-button:hover {
+    background-color: #e09d00;
+}
+/* Estilos para la Página de Compra de Entradas */
+.purchase {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 2rem auto;
+    width: 80%;
+    background-color: #1b1f35;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.purchase-left, .purchase-right {
+    width: 48%;
+}
+
+.purchase-left h2, .purchase-right h3 {
+    color: #ffb100;
+    margin-bottom: 2rem;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.payment-method input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.payment-method label {
+    margin-right: 1rem;
+    color: #fff;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    display: block;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+}
+
+.input-group input:focus {
+    outline: none;
+    border: 2px solid #ffb100;
+}
+
+.confirm-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ffb100;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.confirm-button:hover {
+    background-color: #e09d00;
+}
+
+.purchase-right p {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.purchase-right p strong {
+    display: inline-block;
+    width: 100px;
+}
+
 
 
 

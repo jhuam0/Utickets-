@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías - UTickets</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0d0d27;
+            color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #1a1a40;
+        }
+        .logo h1 {
+            color: #f05454;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #f05454;
+            border-radius: 5px;
+        }
+        .categories {
+            text-align: center;
+            margin: 20px auto;
+        }
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .button-group button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .button-group button:nth-child(1) {
+            background-color: #f05454;
+        }
+        .button-group button:nth-child(2) {
+            background-color: #ffcc00;
+        }
+        .button-group button:nth-child(3) {
+            background-color: #800080;
+        }
+        .button-group button:nth-child(4) {
+            background-color: #008080;
+        }
+        .button-group button:hover {
+            transform: scale(1.1);
+        }
+        .event-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .event-item {
+            display: flex;
+            background-color: #1a1a40;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        .event-item img {
+            width: 40%;
+            object-fit: cover;
+        }
+        .event-info {
+            padding: 10px;
+            flex: 1;
+        }
+        .event-info h3 {
+            margin: 0 0 10px;
+            color: #f05454;
+        }
+        .event-info button {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .event-info button:hover {
+            background-color: #003d80;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>UTickets</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="principal.html">Inicio</a></li>
+                <li><a href="categories.html">Categorías</a></li>
+                <li><a href="#">Ingresar</a></li>
+                <li><a href="#">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="categories">
+        <div class="button-group">
+            <button onclick="location.href='my-events.html'">Mis eventos</button>
+            <button onclick="location.href='mis_facturas.html'">Mis facturas</button>
+            <button onclick="location.href='mis_devoluciones.html'">Mis devoluciones</button>
+            <button onclick="showSection('others')">Otros</button>
+        </div>
+        
+        <div id="events" class="event-list">
+            <div class="event-item">
+                <img src="alanis-morissette.jpg" alt="Alanis Morissette 2025">
+                <div class="event-info">
+                    <h3>Alanis Morissette 2025</h3>
+                    <p>Multiespacio Costa 21 San Miguel - Lima / Música</p>
+                    <p>25 de marzo 2025</p>
+                    <button>Devolución</button>
+                </div>
+            </div>
+            <div class="event-item">
+                <img src="nuestro-lugar-feliz.jpg" alt="Nuestro Lugar Feliz Tour">
+                <div class="event-info">
+                    <h3>Nuestro Lugar Feliz Tour</h3>
+                    <p>Multiespacio Costa 21 San Miguel - Lima / Música</p>
+                    <p>25 de marzo 2025</p>
+                    <button>Devolución</button>
+                </div>
+            </div>
+        </div>
+        <div id="invoices" class="event-list" style="display: none;">
+            <p>Aquí se mostrarán las facturas.</p>
+        </div>
+        <div id="refunds" class="event-list" style="display: none;">
+            <p>Aquí se mostrarán las devoluciones.</p>
+        </div>
+        <div id="others" class="event-list" style="display: none;">
+            <p>Aquí se mostrarán otros elementos.</p>
+        </div>
+    </section>
+
+    <script>
+        function showSection(section) {
+            document.getElementById('events').style.display = 'none';
+            document.getElementById('invoices').style.display = 'none';
+            document.getElementById('refunds').style.display = 'none';
+            document.getElementById('others').style.display = 'none';
+
+            document.getElementById(section).style.display = 'flex';
+        }
+    </script>
+</body>
+</html>

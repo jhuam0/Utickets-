@@ -25,9 +25,9 @@
           </form>
         <nav>
             <ul>
-                <li><a href="#">Categorías</a></li>
-                <li><a href="#">Ingresar</a></li>
-                <li><a href="#">Registro</a></li>
+                <li><a href="#" onclick="redirectToCategories()">Categorías</a></li>
+                <li><a href="#" onclick="redirectToLogin()">Ingresar</a></li>
+                <li><a href="#" onclick="redirectToRegister()">Registro</a>
             </ul>
         </nav>
     </header>
@@ -50,8 +50,8 @@
     <!-- Botones -->
     <section class="buttons">
         <button>Ingeniería de Sistemas</button>
-        <button>Ingeniería de Sistemas</button>
-        <button>Ingeniería de Sistemas</button>
+        <button>Ingeniería civil</button>
+        <button>Ingeniería Economica</button>
     </section>
 
     <!-- Sección de eventos -->
@@ -134,6 +134,15 @@
     <script>
         function redirectToEventDetail() {
             window.location.href = "event-detail.html";
+        }
+        function redirectToCategories() {
+             window.location.href = "categories.html";
+        }
+        function redirectToLogin() {
+             window.location.href = "login.html"; 
+        }
+        function redirectToRegister() { 
+            window.location.href = "register.html"; 
         }
     </script>
 </body>
